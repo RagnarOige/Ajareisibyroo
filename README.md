@@ -1,4 +1,4 @@
-# ParadoxkaReisiBüroo
+## ParadoxkaReisiBüroo
 
 # Idee kirjeldus.
 
