@@ -43,14 +43,33 @@ const services = [
     question: "Mälukustutus masin kustutab teiste inimeste mälu!"
   }
 ];
- 
+
+const popup = document.getElementById("popup");
+const popupClose = document.getElementById("popup-close");
+
+popupClose.addEventListener("click", function () {
+  popup.classList.remove("open");
+});
+
+popup.addEventListener("click", function (event) {
+  if (event.target === popup) {
+    popup.classList.remove("open");
+  }
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    popup.classList.remove("open");
+  }
+});
+
 function showCards(list, gridId, buttonText, message) {
   const grid = document.getElementById(gridId);
- 
+
   list.forEach(function (item) {
     const card = document.createElement("div");
     card.className = "card";
- 
+
     card.innerHTML =
       '<div class="card-image">' +
         '<img src="' + item.image + '" alt="">' +
@@ -60,18 +79,37 @@ function showCards(list, gridId, buttonText, message) {
         '<p>' + item.question + '</p>' +
       '</div>' +
       '<button class="book-button">' + buttonText + '</button>';
- 
+
     const button = card.querySelector(".book-button");
     button.addEventListener("click", function () {
-      alert(message + item.text);
+      if (buttonText === "BRONEERI") {
+        window.location.href = "terms.html";
+      } else {
+        popup.classList.add("open");
+      }
     });
- 
+
     grid.appendChild(card);
   });
 }
- 
+
 showCards(packages, "offers-grid", "BRONEERI", "Broneerid: ");
 showCards(services, "services-grid", "TELLI", "Tellid: ");
+
+const emailInput = document.getElementById("email-input");
+const newsletterButton = document.getElementById("newsletter-button");
+
+newsletterButton.addEventListener("click", function () {
+  const email = emailInput.value;
+
+  if (email === "") {
+    alert("Palun sisesta oma e-posti aadress.");
+  } else {
+    alert("Aitäh! Liitusid uudiskirjaga: " + email);
+    emailInput.value = "";
+  }
+});
+
 const feedbacks = [
   {
     text: "Raskele ülesandele leiti kiiresti lahendus ja kiire vormistus. Ükski küsimus ei jäänud vastuseta.",
