@@ -2,32 +2,38 @@ const packages = [
   {
     image: "IMG/Jurrasic.png",
     text: "Reis dinosauruste ajastusse – seiklus, mis ulatub miljonite aastate taha!",
-    question: "Kas oled valmis reisima miljonite aastate taha?"
+    question: "Kas oled valmis reisima miljonite aastate taha?",
+    url: "Reis dinosauruste ajastusse/dinozavri.index.html"
   },
   {
     image: "IMG/Medival.png",
     text: "Reis keskaega – sukeldu kuningate ja rüütlite ajastusse!",
-    question: "Broneeri oma ajarännak juba täna!"
+    question: "Broneeri oma ajarännak juba täna!",
+    url: "Reis keskaega – sukeldu kuningate ja rüütlite ajastusse!/keskAeg.index.html"
   },
   {
     image: "IMG/Future city.png",
     text: "Reis aastasse 2100 – avasta tulevikku!",
-    question: "Kas oled valmis kohtuma tulevikuga?"
+    question: "Kas oled valmis kohtuma tulevikuga?",
+    url: "Reis aastasse 2100 – avasta tulevikku!/2100aasta.index.html"
   },
   {
     image: "IMG/Ancient.png",
     text: "Reis aastasse 30 pKr – rännak piibliaega!",
-    question: "Broneeri oma ajarännak juba täna!"
+    question: "Broneeri oma ajarännak juba täna!",
+    url: "Reis aastasse 30 pKr  rännak piibliaega!/ChristAeg.index.html"
   },
   {
     image: "IMG/Egypt.png",
     text: "Reis Vana-Egiptusesse – ekspeditsioon läbi aastatuhandete!",
-    question: "Kas oled valmis avastama Vana-Egiptuse saladusi?"
+    question: "Kas oled valmis avastama Vana-Egiptuse saladusi?",
+    url: "Reis Vana-Egiptusesse/Egiptus.index.html"
   },
   {
     image: "IMG/Space elevator.png",
     text: "Meie reisibüroo kutsub sind unustamatule seiklusele aastasse 2060!",
-    question: "Ära jää tulevikust maha – tule ja koge seda oma silmaga !"
+    question: "Ära jää tulevikust maha – tule ja koge seda oma silmaga !",
+    url: "Reis aastasse 2060 – avasta tuleviku maailma!/tulevik2060.index.html"
   }
 ];
 
@@ -76,7 +82,7 @@ function showCards(list, gridId, buttonText, message) {
     const button = card.querySelector(".book-button");
     button.addEventListener("click", function () {
       if (buttonText === "BRONEERI") {
-        window.location.href = "terms.html";
+        window.location.href = item.url;
       } else {
         servicePopupFrame.hidden = false;
       }

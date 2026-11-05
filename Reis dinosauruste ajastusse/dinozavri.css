@@ -1,0 +1,159 @@
+﻿/* BASE */
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #3f611d;
+}
+
+.page {
+    width: 94%;
+    max-width: 1250px;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: #61aa4bf0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+h1 {
+    color: #131d13;
+    font-size: 40px;
+    font-weight: normal;
+    margin: 10px 0 35px;
+}
+
+.back-button {
+    text-decoration: none;
+    color: #142015;
+    font-size: 20px;
+    border: 2px solid #0a0f0a;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background-color: #304a32;
+    color: rgb(245, 246, 245);
+}
+
+.introduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    margin-top: 15px;
+}
+
+.description {
+    width: 43%;
+    color: #0c130d;
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.gallery {
+    width: 49%;
+    max-width: 500px;
+    height: 325px;
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+}
+.offers { margin-top: 45px; }
+
+h2 {
+    text-align: center;
+    color: #080a08;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 35px;
+}
+
+li {
+    color: #0c130c;
+    font-size: 19px;
+    margin-bottom: 19px;
+    line-height: 1.5;
+}
+
+li::before {
+    content: "✦";
+    color: #172319;
+    margin-right: 12px;
+}
+
+.packages { width: 90%; margin: 55px auto 15px; }
+
+.package {
+    display: grid;
+    grid-template-columns: 2.5fr 0.8fr 0.8fr 1fr;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 5px;
+    border-bottom: 2px solid #000000;
+    color: #090c09;
+    font-size: 14px;
+}
+
+.package button {
+    background-color: #172d1d;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 11px 15px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.package button:hover {
+    background-color: #64bb73;
+    transform: scale(1.04);
+}
+
+@media (max-width: 750px) {
+    .page {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 { font-size: 28px; }
+
+    .introduction {
+        flex-direction: column;
+    }
+
+    .description,
+    .gallery {
+        width: 100%;
+    }
+
+    .gallery {
+        max-width: 100%;
+        height: 180px;
+        margin-left: 0;
+    }
+
+    .packages {
+        width: 100%;
+    }
+
+    .package {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+}

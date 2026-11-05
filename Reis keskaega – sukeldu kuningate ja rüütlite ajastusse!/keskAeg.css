@@ -1,0 +1,283 @@
+/* ОСНОВНЫЕ НАСТРОЙКИ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f6d397;
+}
+
+
+/* ОСНОВНАЯ СТРАНИЦА */
+
+.page {
+    width: 96%;
+    max-width: 1400px;
+
+    margin: 30px auto;
+
+    padding: 40px;
+
+    background-color: #ad8863;
+}
+
+
+/* ВЕРХНЯЯ ЧАСТЬ */
+
+header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+h1 {
+    color: #0e110e;
+
+    font-size: 40px;
+    font-weight: normal;
+
+    margin: 10px 0 35px;
+}
+
+
+/* КНОПКА НАЗАД */
+
+.back-button {
+    text-decoration: none;
+
+    color: #484444;
+
+    font-size: 22px;
+
+    border: 1px solid #050505;
+
+    padding: 10px 15px;
+
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background-color: #111611;
+    color: white;
+}
+
+
+/* ОПИСАНИЕ И ФОТОГРАФИИ */
+
+.introduction {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 30px;
+
+    margin-top: 20px;
+}
+
+
+/* ТЕКСТ */
+
+.description {
+    width: 43%;
+
+    color: #0c0e0c;
+
+    font-size: 19px;
+
+    line-height: 1.55;
+
+    text-align: left;
+}
+
+.description p {
+    margin-bottom: 18px;
+}
+
+
+/* ГАЛЕРЕЯ */
+
+.gallery > img {
+    grid-column: 1;
+    grid-row: 1 / 3;
+
+    width: 90%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* ПРАВЫЕ ФОТОГРАФИИ */
+
+.right-images {
+    grid-column: 2;
+    grid-row: 1 / 3;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    min-height: 0;
+}
+
+.right-images img {
+    width: 10%;
+    height: calc((100% - 5px) / 2);
+
+    object-fit: cover;
+}
+
+
+/* ЗАГОЛОВОК ПРЕДЛОЖЕНИЙ */
+
+.offers {
+    margin-top: 40px;
+}
+
+h2 {
+    text-align: center;
+
+    color: #303c30;
+
+    font-size: 29px;
+
+    font-weight: normal;
+
+    margin-bottom: 25px;
+}
+
+
+/* ДОСТОПРИМЕЧАТЕЛЬНОСТИ */
+
+.attraction {
+    margin: 20px 15px;
+}
+
+h3 {
+    color: #303c30;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+.attraction p {
+    color: #343b32;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    margin-top: 3px;
+}
+
+
+/* ТУРИСТИЧЕСКИЕ ПАКЕТЫ */
+
+.packages {
+    width: 85%;
+
+    margin: 55px auto 15px;
+}
+
+
+/* ОТДЕЛЬНЫЕ ПРЕДЛОЖЕНИЯ */
+
+.package {
+    display: grid;
+
+    grid-template-columns: 2.5fr 0.8fr 0.8fr 1fr;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 12px 5px;
+
+    border-bottom: 1px solid #43483d;
+
+    color: #1d241d;
+
+    font-size: 15px;
+}
+
+
+/* КНОПКИ */
+
+.package button {
+    background-color: #183522;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 22px;
+
+    padding: 10px 15px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.package button:hover {
+    background-color: #526b48;
+
+    transform: scale(1.04);
+}
+
+
+/* АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНА */
+
+@media (max-width: 750px) {
+
+    .page {
+        width: 100%;
+
+        margin: 0;
+
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .introduction {
+        flex-direction: column;
+    }
+
+    .description,
+    .gallery {
+        width: 100%;
+    }
+
+    .gallery {
+        height: 300px;
+    }
+
+    .packages {
+        width: 100%;
+    }
+
+    .package {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 12px;
+    }
+
+}
