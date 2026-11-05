@@ -21,7 +21,7 @@ Märten -
 
 Mattias - 
 
-Rainis - 
+Rainis - Ma olin abiks programmidega mida me kasutasime, ideedega, probleemidega, navigation bari ja footeri loomisega. Õppisin suhtlemist ja abivalmisust. 
 
 Ragnar - 
 
