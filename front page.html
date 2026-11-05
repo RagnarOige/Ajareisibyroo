@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ParadoXkaReisiBüroo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+
+    <div class="logo">
+      <img src="IMG/logo.png" alt="Logo">
+      <h3>Parado</h3>
+      <h3 class="X">X</h3>
+      <h3>kaReisiBüroo</h3>
+    </div>
+
+    <div class="search">
+      <input type="text" id="search-input" placeholder="⌕│ Search...">
+    </div>
+
+    <div class="parem">
+      <select class="keelenupp">
+        <option value="en">EN</option>
+        <option value="et">ET</option>
+      </select>
+
+      <button class="menu" id="menu-button">☰</button>
+    </div>
+
+    <div class="menu-list" id="menu-list">
+      <a href="#pakkumised">Pakkumised</a>
+      <a href="#lisateenused">Lisateenused</a>
+      <a href="#tagasiside">Tagasiside</a>
+      <a href="#uudiskiri">Uudiskiri</a>
+    </div>
+
+  </nav>
+
+  <section class="offers" id="pakkumised">
+    <h2 class="offers-title">PARIMAD PAKKUMISED</h2>
+    <div class="offers-grid" id="offers-grid"></div>
+  </section>
+
+  <section class="offers" id="lisateenused">
+    <h2 class="offers-title">LISATEENUSED</h2>
+    <div class="offers-grid" id="services-grid"></div>
+  </section>
+
+  <section class="feedback" id="tagasiside">
+    <h2 class="feedback-title">Klientide tagasiside</h2>
+    <div class="feedback-grid" id="feedback-grid"></div>
+  </section>
+
+  <section class="newsletter" id="uudiskiri">
+    <h2 class="newsletter-title">Uudiskiri</h2>
+    <p class="newsletter-text">
+      Tule meiega ajas rändama!<br>
+      Või vähemalt saa teada, kuhu järgmisena minna.<br>
+      Liitu ParadoXkaReisiBüroo uudiskirjaga ja saa esimesena teada meie uutest reisipakkumistest, uskumatutest sihtkohtadest ning eripakkumistest, mis võivad sinu ajajoone korralikult sassi lüüa.
+    </p>
+    <input class="newsletter-input" id="email-input" type="email" placeholder="Sinu e-posti aadress...">
+    <button class="newsletter-button" id="newsletter-button">Liitu uudiskirjaga!</button>
+    <p class="newsletter-note">Me ei saada sulle rämpsposti. Vähemalt mitte enne 3026. aastat.</p>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-box">
+        <h3 class="footer-title footer-title-big">2026 travel</h3>
+        <a href="#">Meist</a>
+        <a href="#">Kontaktid</a>
+        <a href="#">Tule tööle!</a>
+        <a href="#">Uudised</a>
+      </div>
+
+      <div class="footer-box">
+        <h3 class="footer-title">Lojaalsusprogramm</h3>
+        <a href="#">Kuldkaart</a>
+        <a href="#">Platinum Club kaart</a>
+        <a href="#">Püsioodustused</a>
+        <a href="#">Boonuspreemiad</a>
+      </div>
+
+      <div class="footer-box">
+        <h3 class="footer-title">Müügitingimused ja teenustasud</h3>
+        <a href="#">Müügitingimused</a>
+        <a href="#">Teenustasud</a>
+        <a href="#">Makseviisid</a>
+      </div>
+
+      <div class="footer-box">
+        <h3 class="footer-title">Õigusalane teave</h3>
+        <a href="#">Privaatsusteave</a>
+        <a href="#">Küpsiste info</a>
+        <a href="#">Rikkumisest teavitamine</a>
+      </div>
+
+      <div class="footer-box">
+        <h3 class="footer-title">Äriklient</h3>
+        <a href="#">Ärikliendi eelised</a>
+      </div>
+    </div>
+
+    <div class="pakkumised">
+      <h2>Pakkumised</h2>
+
+      <div class="pakkumised-grid">
+        <div class="footer-column">
+          <a href="#">Lennud</a>
+          <a href="#">Majutus</a>
+          <a href="#">Pakettreisid</a>
+        </div>
+
+        <div class="footer-column">
+          <a href="#">Laevapiletid</a>
+          <a href="#">Kruiisid</a>
+          <a href="#">Puhka Eestis</a>
+        </div>
+
+        <div class="footer-column">
+          <a href="#">Autorent</a>
+          <a href="#">Bussipiletid</a>
+          <a href="#">Rongipiletid</a>
+        </div>
+
+        <div class="footer-column">
+          <a href="#">Linnatransport ja transfeerid</a>
+          <a href="#">Ekskursioonid ja piletid</a>
+          <a href="#">Reisikindlustus</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
