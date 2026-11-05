@@ -17,7 +17,7 @@ Cristel -
 
 Katariina - 
 
-Märten - 
+Märten - Õppisin html-i ja css-i kirjutamist ning veebilehe kujundamist. Arutasin ülesandeid ja ideid tiimiga.
 
 Mattias - 
 
