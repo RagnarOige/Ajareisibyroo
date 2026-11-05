@@ -44,22 +44,15 @@ const services = [
   }
 ];
 
-const popup = document.getElementById("popup");
-const popupClose = document.getElementById("popup-close");
+const servicePopupFrame = document.getElementById("service-popup-frame");
 
-popupClose.addEventListener("click", function () {
-  popup.classList.remove("open");
-});
-
-popup.addEventListener("click", function (event) {
-  if (event.target === popup) {
-    popup.classList.remove("open");
-  }
-});
-
-document.addEventListener("keydown", function (event) {
-  if (event.key === "Escape") {
-    popup.classList.remove("open");
+window.addEventListener("message", function (event) {
+  if (
+    event.source === servicePopupFrame.contentWindow &&
+    event.origin === window.location.origin &&
+    event.data?.type === "close-service-popup"
+  ) {
+    servicePopupFrame.hidden = true;
   }
 });
 
@@ -85,7 +78,7 @@ function showCards(list, gridId, buttonText, message) {
       if (buttonText === "BRONEERI") {
         window.location.href = "terms.html";
       } else {
-        popup.classList.add("open");
+        servicePopupFrame.hidden = false;
       }
     });
 

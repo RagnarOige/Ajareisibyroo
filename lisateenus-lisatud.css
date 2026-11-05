@@ -1,0 +1,101 @@
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 100;
+}
+
+.popup.open {
+  display: flex;
+}
+
+.popup-box {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  background-color: #67AEC0;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  padding: 60px 40px 50px;
+  text-align: center;
+}
+
+.popup-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  color: #111;
+}
+
+.popup-close:hover {
+  color: #003D63;
+}
+
+.popup-title {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.popup-green {
+  color: #1e7a14;
+}
+
+.popup-contacts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px 40px;
+}
+
+.popup-contact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+}
+
+.popup-contact img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.popup-contact p {
+  font-size: 13px;
+  line-height: 2;
+}
+
+.popup-contact a {
+  color: #111;
+  text-decoration: none;
+}
+
+.popup-contact a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .popup-title {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .popup-contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+}

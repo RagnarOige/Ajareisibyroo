@@ -1,0 +1,102 @@
+body {
+    background: #67AEC0;
+    font-family: Arial;
+    margin: 30px;
+}
+
+.container {
+    text-align: center;
+}
+
+h3 {
+    margin-top: 60px;
+}
+
+.fields {
+    display: flex;
+    gap: 140px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 210px;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.alumine {
+    display: flex;
+    gap: 140px;
+    margin-top: 35px;
+}
+
+textarea {
+    width: 595px;
+    height: 200px;
+    border-radius: 6px;
+}
+
+.nupud {
+    text-align: center;
+    margin-top: 40px;
+}
+
+button {
+    padding: 10px 25px;
+    border: none;
+    margin: 10px;
+}
+
+.punane {
+    background: #FD292D;
+}
+
+.sinine {
+    background: #68C1F9;
+    margin-bottom: 40px;
+}
+
+.jalus {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 30px;
+}
+.contact-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin: 20px auto 0;
+    padding: 0 16px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-details p {
+    margin: 0;
+}
+
+.contact-item img {
+    display: block;
+    width: 125px;
+    height: 110px;
+    object-fit: cover;
+}
