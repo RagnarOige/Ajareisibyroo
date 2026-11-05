@@ -59,13 +59,19 @@ body {
 }
 
 .book-button {
-  background-color: #63b8f5;
+  background-color: #003D63;
+  color: #ffffff;
   border: none;
   padding: 8px 20px;
   font-family: inherit;
   font-size: 8px;
   cursor: pointer;
 }
+
+.book-button:hover {
+  background-color: #0a5a8c;
+}
+
 
 .book-button:hover {
   background-color: #4aa5e8;
