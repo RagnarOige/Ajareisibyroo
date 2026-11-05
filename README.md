@@ -13,7 +13,7 @@ Reiside valik mille vahel saab valida. Lisateenused. Reiside broneerimine. Detai
 
 ## Töörollid. Mida tegin ja õppisin?
 
-Cristel - 
+Cristel - Ma tegin veebilehe ühe osa ja aitasin veebilehe disainiga. Õppisin kuidas teha efektiivset koostööd ja kuidas kasutada html-i ja css-i. 
 
 Katariina - 
 
