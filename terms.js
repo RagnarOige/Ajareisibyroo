@@ -23,19 +23,14 @@ function showGoodbye() {
   });
 }
 
-if (sessionStorage.getItem("declined") === "yes") {
-  showGoodbye();
-}
-
 acceptButton.addEventListener("click", function () {
   message.textContent = "Aitäh! Oled tingimustega nõustunud.";
   setTimeout(function () {
-    window.location.href = "front-page.html";
+    window.location.href = "index.html";
   }, 1500);
 });
 
 declineButton.addEventListener("click", function () {
-  sessionStorage.setItem("declined", "yes");
   window.close();
   showGoodbye();
 });
