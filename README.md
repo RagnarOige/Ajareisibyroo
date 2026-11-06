@@ -24,6 +24,6 @@ Projekti käigus õppisin, kuidas Figmas meeskonnaga koostööd teha ja ühist v
 
 Rainis - Ma olin abiks programmidega mida me kasutasime, ideedega, probleemidega, navigation bari ja footeri loomisega. Õppisin suhtlemist ja abivalmisust. 
 
-Ragnar - 
+Ragnar - Õppisin kuidas tiimi juhendada.
 
 
