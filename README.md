@@ -1,5 +1,7 @@
 # ParadoxkaReisiBüroo
 
+https://ajareisibyroo.vercel.app/
+
 ## Idee kirjeldus.
 
 ParadoxkaReisiBüroo on veebipõhine reisibüroo, mis pakub inimestele võimalust reisida erinevatesse ajastutesse. Kasutajad saavad valida sobiva ajastu, tutvuda reisipakettidega, broneerida reisi ning lisada sellele erinevaid lisateenuseid.
