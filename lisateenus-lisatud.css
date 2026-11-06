@@ -20,7 +20,7 @@
   position: relative;
   width: 100%;
   max-width: 800px;
-  background-color: #67AEC0;
+  background-color: #7567CB;
   border-radius: 15px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
   padding: 60px 40px 50px;
@@ -50,7 +50,7 @@
 }
 
 .popup-green {
-  color: #1e7a14;
+  color: rgb(32, 167, 32);
 }
 
 .popup-contacts {
