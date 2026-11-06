@@ -43,6 +43,5 @@ acceptButton.addEventListener("click", function () {
 
 declineButton.addEventListener("click", function () {
   sessionStorage.setItem("declined", "yes");
-  window.close();
   showGoodbye();
 });
