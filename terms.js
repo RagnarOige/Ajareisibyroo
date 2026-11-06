@@ -14,7 +14,7 @@ function showGoodbye() {
       '<p>Sulge see vahekaart ise.</p>' +
     '</div>';
 
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 500; i++) {
     history.pushState(null, "", location.href);
   }
 
@@ -37,7 +37,7 @@ if (sessionStorage.getItem("declined") === "yes") {
 acceptButton.addEventListener("click", function () {
   message.textContent = "Aitäh! Oled tingimustega nõustunud.";
   setTimeout(function () {
-    window.location.href = "index.html";
+    window.location.href = "front-page.html";
   }, 1500);
 });
 
