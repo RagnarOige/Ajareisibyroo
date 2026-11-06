@@ -14,7 +14,7 @@ function showGoodbye() {
       '<p>Sulge see vahekaart ise.</p>' +
     '</div>';
 
-  for (let i = 0; i < 500; i++) {
+  for (let i = 0; i < 50; i++) {
     history.pushState(null, "", location.href);
   }
 
@@ -23,8 +23,15 @@ function showGoodbye() {
   });
 }
 
+const navigationEntry = performance.getEntriesByType("navigation")[0];
+const navigationType = navigationEntry ? navigationEntry.type : "navigate";
+
 if (sessionStorage.getItem("declined") === "yes") {
-  showGoodbye();
+  if (navigationType === "navigate") {
+    sessionStorage.removeItem("declined");
+  } else {
+    showGoodbye();
+  }
 }
 
 acceptButton.addEventListener("click", function () {
