@@ -19,8 +19,8 @@ Katariina- Sain oma esimese meeskonnatöö kogemuse. Pakkusin meeskonnale ideid,
 
 Märten - Õppisin html-i ja css-i kirjutamist ning veebilehe kujundamist. Arutasin ülesandeid ja ideid tiimiga.
 
-Mattias - Minu tööülesanneteks olid Figma disaineri ning HTML-i, CSS-i ja JavaScripti programmeerija rollis esilehe, kasutustingimuste lehe ja hüpikakna (pop-up) loomine.
-Projekti käigus õppisin, kuidas Figmas meeskonnaga koostööd teha ja ühist veebilehte kujundada. Samuti sain paremini aru, kuidas grupis tõhusamalt töötada ja ülesandeid omavahel jagada. Lisaks täiendasin oma teadmisi CSS-i ja JavaScripti kohta, kuna tegelesin esimest korda selliste ülesannetega nagu hüpikakende loomine ning mitme meeskonnaliikme kirjutatud koodi ühendamine üheks toimivaks veebileheks.
+Mattias - Minu tööülesanneteks olid Figma disaineri ning HTML-i, CSS-i ja JavaScripti programmeerija rollis esilehe, kasutustingimuste lehe ja pop-up loomine.
+Projekti käigus õppisin, kuidas Figmas meeskonnaga koostööd teha ja ühist veebilehte kujundada. Samuti sain paremini aru, kuidas grupis tõhusamalt töötada ja ülesandeid omavahel jagada. Lisaks täiendasin oma teadmisi CSS-i ja JavaScripti kohta, kuna tegelesin esimest korda selliste ülesannetega nagu pop-up loomine ning mitme meeskonnaliikme kirjutatud koodi ühendamine üheks toimivaks veebileheks.
 
 Rainis - Ma olin abiks programmidega mida me kasutasime, ideedega, probleemidega, navigation bari ja footeri loomisega. Õppisin suhtlemist ja abivalmisust. 
 
