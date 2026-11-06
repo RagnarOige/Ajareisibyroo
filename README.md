@@ -15,7 +15,7 @@ Reiside valik mille vahel saab valida. Lisateenused. Reiside broneerimine. Detai
 
 Cristel - Ma tegin veebilehe ühe osa ja aitasin veebilehe disainiga. Õppisin kuidas teha efektiivset koostööd ja kuidas kasutada html-i ja css-i. 
 
-Katariina - 
+Katariina- Sain oma esimese meeskonnatöö kogemuse. Pakkusin meeskonnale ideid, programmeerisin veebilehti HTML-i ja CSS-i abil, lõin eraldi teenuste kirjeldustega lehti ning tegelesin veebilehe kujundamisega, valides värve, stiile ja fotosid.
 
 Märten - Õppisin html-i ja css-i kirjutamist ning veebilehe kujundamist. Arutasin ülesandeid ja ideid tiimiga.
 
