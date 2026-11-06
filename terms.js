@@ -37,7 +37,7 @@ if (sessionStorage.getItem("declined") === "yes") {
 acceptButton.addEventListener("click", function () {
   message.textContent = "Aitäh! Oled tingimustega nõustunud.";
   setTimeout(function () {
-    window.location.href = "front-page.html";
+    window.location.href = "index.html";
   }, 1500);
 });
 
