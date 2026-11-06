@@ -1,7 +1,24 @@
 body {
-    background: #67AEC0;
+    background: #7567CB;
     font-family: Arial;
     margin: 30px;
+}
+
+.back-button {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    text-decoration: none;
+    color: #142015;
+    font-size: 20px;
+    border: 2px solid #0a0f0a;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.back-button:hover {
+    background-color: #141313;
+    color: rgb(245, 246, 245);
 }
 
 .container {

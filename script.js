@@ -6,13 +6,14 @@ const packages = [
     url: "Reis dinosauruste ajastusse/dinozavri.index.html"
   },
   {
-    image: "IMG/Medival.png",
+    image: "IMG/Medival.png", href: "Reis keskaega – sukeldu kuningate ja rüütlite ajastusse!/keskAeg.index.html",
     text: "Reis keskaega – sukeldu kuningate ja rüütlite ajastusse!",
     question: "Broneeri oma ajarännak juba täna!",
     url: "Reis keskaega – sukeldu kuningate ja rüütlite ajastusse!/keskAeg.index.html"
+    
   },
   {
-    image: "IMG/Future city.png",
+    image: "IMG/Future city.png", href: "Reis aastasse 2100 – avasta tulevikku!/2100aasta.index.html",
     text: "Reis aastasse 2100 – avasta tulevikku!",
     question: "Kas oled valmis kohtuma tulevikuga?",
     url: "Reis aastasse 2100 – avasta tulevikku!/2100aasta.index.html"
@@ -44,7 +45,7 @@ const services = [
     question: "Kuninglik ihukaitsja kaitseb sind võõraste ohtude eest!"
   },
   {
-    image: "IMG/Memory wipe.png",
+    image: "IMG/mindy.png",
     text: "Mälukustutus masin",
     question: "Mälukustutus masin kustutab teiste inimeste mälu!"
   }
@@ -71,7 +72,11 @@ function showCards(list, gridId, buttonText, message) {
 
     card.innerHTML =
       '<div class="card-image">' +
-        '<img src="' + item.image + '" alt="">' +
+        (item.url
+          ? '<a href="' + item.url + '" aria-label="Vaata reisipakkumist: ' + item.text + '">' +
+              '<img src="' + item.image + '" alt="">' +
+            '</a>'
+          : '<img src="' + item.image + '" alt="">') +
       '</div>' +
       '<div class="card-text">' +
         '<p>' + item.text + '</p>' +
